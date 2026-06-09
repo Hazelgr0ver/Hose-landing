@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B0F17"/>
+      <stop offset="1" stop-color="#0F141E"/>
+    </linearGradient>
+    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#34D6E8"/>
+      <stop offset="1" stop-color="#0E94A8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.12" stroke="#15B8CB" stroke-width="2">
+    <line x1="0" y1="158" x2="1200" y2="158"/>
+    <line x1="0" y1="316" x2="1200" y2="316"/>
+    <line x1="0" y1="474" x2="1200" y2="474"/>
+  </g>
+  <!-- спираль -->
+  <g transform="translate(820,315)" fill="none" stroke="url(#acc)" stroke-width="10" stroke-linecap="round" opacity="0.9">
+    <ellipse cx="0" cy="-120" rx="150" ry="42"/>
+    <ellipse cx="0" cy="-40" rx="150" ry="42"/>
+    <ellipse cx="0" cy="40" rx="150" ry="42"/>
+    <ellipse cx="0" cy="120" rx="150" ry="42"/>
+  </g>
+  <text x="90" y="250" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="800" fill="#34D6E8">БУГДАС ПЛАСТ</text>
+  <text x="90" y="330" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="800" fill="#FFFFFF">Спирально-навитые</text>
+  <text x="90" y="398" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="800" fill="#FFFFFF">ПВХ-шланги</text>
+  <text x="90" y="470" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="500" fill="#9CA9BC">Прочность · морозостойкость · химстойкость</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#34D6E8"/>
+      <stop offset="1" stop-color="#0E94A8"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#0B0F17"/>
+  <!-- спирально-навитой шланг: кольца спирали -->
+  <g fill="none" stroke="url(#g)" stroke-width="4" stroke-linecap="round">
+    <path d="M16 22c0-5 6-9 16-9s16 4 16 9"/>
+    <path d="M16 32c0-5 6-9 16-9s16 4 16 9"/>
+    <path d="M16 42c0-5 6-9 16-9s16 4 16 9"/>
+    <path d="M16 52c0-5 6-9 16-9s16 4 16 9"/>
+  </g>
+  <line x1="16" y1="22" x2="16" y2="52" stroke="#117585" stroke-width="4" stroke-linecap="round"/>
+  <line x1="48" y1="22" x2="48" y2="52" stroke="#117585" stroke-width="4" stroke-linecap="round"/>
+</svg>

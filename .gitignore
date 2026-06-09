@@ -1,0 +1,15 @@
+node_modules
+dist
+dist-ssr
+*.local
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+*.log
+
+# Build artifacts
+*.tsbuildinfo
+
+# Исходные материалы (не часть деливери): бриф с реквизитами и внутренний регламент
+*.docx
+SITE_CREATION_PLAYBOOK.md
