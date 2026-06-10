@@ -35,7 +35,7 @@ export default function Product() {
           <div className="lg:sticky lg:top-28">
             <SectionTitle
               align="left"
-              eyebrow="Что разрабатывает Бугдас Пласт"
+              eyebrow="Что мы разрабатываем"
               title="Гибкие армированные шланги для реальных условий эксплуатации"
             />
             <Reveal delay={0.1}>

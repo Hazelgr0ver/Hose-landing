@@ -1,49 +1,15 @@
 import Container from '../ui/Container'
 import Reveal from '../ui/Reveal'
 import { partnerStatement } from '../../lib/site'
+import fondLogo from '../../assets/Fond.webp'
+import platformLogo from '../../assets/Platform.webp'
 
 /**
  * ОБЯЗАТЕЛЬНЫЙ блок «Партнёры» (требование договора и отчётности перед Фондом).
  * Текст по центру — дословный, менять нельзя.
- * Логотипы ниже — аккуратные временные плейсхолдеры. Замените их
- * официальными логотипами Фонда содействия инновациям и ПУТП (SVG/PNG),
- * см. комментарии у компонентов FundLogo / PutpLogo.
+ * Логотипы: официальные знаки Фонда содействия инновациям (ФСИ) и ПУТП.
+ * Файлы — src/assets/Fond.webp и src/assets/Platform.webp.
  */
-
-// Плейсхолдер логотипа Фонда содействия инновациям.
-// TODO: заменить на официальный логотип (не искажать пропорции и цвета).
-function FundLogo() {
-  return (
-    <div className="flex h-24 w-full max-w-[230px] flex-col items-center justify-center rounded-2xl border border-graphite-500/40 bg-white px-5 py-4 text-center shadow-soft">
-      <span className="text-[26px] font-black leading-none tracking-tight text-[#0E94A8]">
-        ФСИ
-      </span>
-      <span className="mt-1.5 text-[10px] font-semibold uppercase leading-tight tracking-wide text-graphite-700">
-        Фонд содействия
-        <br />
-        инновациям
-      </span>
-    </div>
-  )
-}
-
-// Плейсхолдер логотипа ПУТП.
-// TODO: заменить на официальный логотип мероприятия (не заменять текстовую часть).
-function PutpLogo() {
-  return (
-    <div className="flex h-24 w-full max-w-[230px] flex-col items-center justify-center rounded-2xl border border-graphite-500/40 bg-white px-5 py-4 text-center shadow-soft">
-      <span className="text-[26px] font-black leading-none tracking-tight text-graphite-800">
-        ПУТП
-      </span>
-      <span className="mt-1.5 text-[10px] font-semibold uppercase leading-tight tracking-wide text-graphite-700">
-        Платформа университетского
-        <br />
-        технологического предпринимательства
-      </span>
-    </div>
-  )
-}
-
 export default function Partners() {
   return (
     <section id="partners" className="relative scroll-mt-24 bg-white py-20 sm:py-24">
@@ -56,9 +22,14 @@ export default function Partners() {
 
         <Reveal delay={0.1}>
           <div className="mt-12 grid items-center gap-10 lg:grid-cols-[1fr_1.5fr_1fr]">
-            {/* Логотип Фонда — слева */}
+            {/* Логотип Фонда содействия инновациям — слева */}
             <div className="flex justify-center lg:justify-start">
-              <FundLogo />
+              <img
+                src={fondLogo}
+                alt="Логотип Фонда содействия инновациям"
+                className="h-auto w-full max-w-[230px] object-contain"
+                loading="lazy"
+              />
             </div>
 
             {/* Дословный текст — по центру */}
@@ -68,20 +39,14 @@ export default function Partners() {
 
             {/* Логотип ПУТП — справа */}
             <div className="flex justify-center lg:justify-end">
-              <PutpLogo />
+              <img
+                src={platformLogo}
+                alt="Логотип платформы университетского технологического предпринимательства"
+                className="h-auto w-full max-w-[210px] object-contain"
+                loading="lazy"
+              />
             </div>
           </div>
-        </Reveal>
-
-        <Reveal delay={0.2}>
-          <p className="mx-auto mt-12 max-w-2xl text-center text-sm leading-relaxed text-graphite-500">
-            Поддержка Фонда подтверждает статус технологического стартап-проекта.
-            Разработка ведётся при участии {' '}
-            <span className="font-medium text-graphite-700">
-              Иркутского национального исследовательского технического университета
-            </span>
-            .
-          </p>
         </Reveal>
       </Container>
     </section>

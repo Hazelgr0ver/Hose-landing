@@ -85,7 +85,7 @@ export default function Hero() {
             variants={fadeUp}
             initial="hidden"
             animate="show"
-            className="mt-12 grid grid-cols-2 gap-x-6 gap-y-6 sm:grid-cols-4"
+            className="mt-12 grid grid-cols-2 gap-x-6 gap-y-6 sm:grid-cols-3"
           >
             {heroStats.map((s) => (
               <div key={s.label}>

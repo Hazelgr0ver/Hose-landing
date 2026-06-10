@@ -2,6 +2,7 @@ import { Routes, Route, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import CookieConsent from './components/CookieConsent'
 import HomePage from './pages/HomePage'
 import PrivacyPage from './pages/legal/PrivacyPage'
 import ConsentPage from './pages/legal/ConsentPage'
@@ -32,6 +33,7 @@ export default function App() {
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />
+      <CookieConsent />
     </>
   )
 }

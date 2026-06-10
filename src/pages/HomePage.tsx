@@ -1,6 +1,5 @@
 import { useEffect } from 'react'
 import Hero from '../components/Hero'
-import Problems from '../components/sections/Problems'
 import Product from '../components/sections/Product'
 import Audience from '../components/sections/Audience'
 import Applications from '../components/sections/Applications'
@@ -26,7 +25,6 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <Problems />
       <Product />
       <Audience />
       <Applications />

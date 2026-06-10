@@ -41,7 +41,7 @@ export default function Footer() {
               </a>
               <p className="flex items-start gap-2.5 text-slate-400">
                 <MapPin size={16} className="mt-0.5 shrink-0 text-brand-400" />
-                {site.legalAddress}
+                {site.addressShort}
               </p>
             </div>
           </div>
@@ -88,7 +88,18 @@ export default function Footer() {
           <p>
             © {new Date().getFullYear()} {site.legalName}. Все права защищены.
           </p>
-          <p>{site.director}</p>
+          <p>
+            Разработано{' '}
+            <a
+              href={site.developerUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-slate-400 transition-colors hover:text-brand-300"
+            >
+              {site.developerName}
+            </a>{' '}
+            © 2026 г.
+          </p>
         </div>
       </Container>
     </footer>
